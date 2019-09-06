@@ -1,4 +1,4 @@
-package br.univali.kob.calculator.model;
+package br.univali.kob.calculator;
 
 import br.univali.kob.stack.model.Stack;
 
@@ -13,13 +13,13 @@ public class Calculator {
      * Default class constructor
      */
     public Calculator() {
-        InitialValues();
+        initialValues();
     }
 
     /**
      * Clear stack and result
      */
-    public void InitialValues() {
+    public void initialValues() {
         this.lastSteps = new Stack<Integer>();
         this.result = null;
     }
